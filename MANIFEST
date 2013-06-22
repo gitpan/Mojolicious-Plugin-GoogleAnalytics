@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST
+META.yml
+Makefile.PL
+README
+cpanfile
+dist.ini
+eg/analytics.pl
+lib/Mojolicious/Plugin/GoogleAnalytics.pm
+t/basic.t
