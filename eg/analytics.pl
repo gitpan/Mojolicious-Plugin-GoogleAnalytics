@@ -21,8 +21,10 @@ Welcome to the Mojolicious real-time web framework!
 @@ layouts/default.html.ep
 <!DOCTYPE html>
 <html>
-  <head><title><%= title %></title></head>
-  <body><%= content %>
+  <head>
+  <title><%= title %></title>
   <%= analytics 'UA-23169268-1' %>
+  </head>
+  <body><%= content %>
   </body>
 </html>

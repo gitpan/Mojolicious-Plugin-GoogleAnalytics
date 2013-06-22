@@ -4,7 +4,7 @@ use strictures 1;
 use Mojo::Base 'Mojolicious::Plugin';
 use Mojo::ByteStream 'b';
 
-our $VERSION = '0.001'; # VERSION
+our $VERSION = '0.002'; # VERSION
 
 sub register {
     my ($self, $app) = @_;
@@ -51,7 +51,7 @@ Mojolicious::Plugin::GoogleAnalytics - Mojolicious Plugin
 
   # In your layout template
   <%= analytics 'UA-32432-1' %>
-  </body> <!-- Make sure its just before closing body tag -->
+  </head> <!-- Make sure its just before closing head tag -->
 
 
 =head1 DESCRIPTION
