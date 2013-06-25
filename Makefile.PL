@@ -21,7 +21,6 @@ my %WriteMakefileArgs = (
   "NAME" => "Mojolicious::Plugin::GoogleAnalytics",
   "PREREQ_PM" => {
     "Mojo::Base" => 0,
-    "Mojo::ByteStream" => 0,
     "strictures" => 1
   },
   "TEST_REQUIRES" => {
@@ -29,7 +28,7 @@ my %WriteMakefileArgs = (
     "Test::Mojo" => 0,
     "Test::More" => 0
   },
-  "VERSION" => "0.002",
+  "VERSION" => "0.003",
   "test" => {
     "TESTS" => "t/*.t"
   }

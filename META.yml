@@ -17,9 +17,8 @@ meta-spec:
 name: Mojolicious-Plugin-GoogleAnalytics
 requires:
   Mojo::Base: 0
-  Mojo::ByteStream: 0
   strictures: 1
 resources:
   homepage: https://github.com/battlemidget/Mojolicious-Plugin-GoogleAnalytics
   repository: https://github.com/battlemidget/Mojolicious-Plugin-GoogleAnalytics.git
-version: 0.002
+version: 0.003

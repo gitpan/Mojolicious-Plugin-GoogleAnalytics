@@ -1,5 +1,4 @@
 requires "Mojo::Base" => "0";
-requires "Mojo::ByteStream" => "0";
 requires "strictures" => "1";
 
 on 'test' => sub {

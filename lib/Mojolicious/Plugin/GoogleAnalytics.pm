@@ -2,22 +2,38 @@ package Mojolicious::Plugin::GoogleAnalytics;
 
 use strictures 1;
 use Mojo::Base 'Mojolicious::Plugin';
-use Mojo::ByteStream 'b';
 
-our $VERSION = '0.002'; # VERSION
+our $VERSION = '0.003'; # VERSION
+
+has 'template' => 'analytics_template';
 
 sub register {
-    my ($self, $app) = @_;
+    my ($plugin, $app) = (shift, shift);
+    push @{$app->renderer->classes}, __PACKAGE__;
+
+    $app->helper(analytics => sub {$plugin});
 
     $app->helper(
-        analytics => sub {
-            my $c            = shift;
+        analytics_inc => sub {
+            my $self         = shift;
             my $analytics_id = shift;
 
             die "No analytics ID defined" unless defined $analytics_id;
-            return b(<<"ENDANALYTICS");
-<script type="text/javascript">
+            $self->render(
+                template => $self->analytics->template,
+                partial  => 1,
+            );
+        }
+    );
+}
 
+1;
+
+__DATA__
+
+@@ analytics_template.html.ep
+
+%= javascript begin
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', '${analytics_id}']);
   _gaq.push(['_trackPageview']);
@@ -27,14 +43,8 @@ sub register {
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
+%= end
 
-</script>
-ENDANALYTICS
-        }
-    );
-}
-
-1;
 __END__
 
 =head1 NAME
