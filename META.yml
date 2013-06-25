@@ -21,4 +21,4 @@ requires:
 resources:
   homepage: https://github.com/battlemidget/Mojolicious-Plugin-GoogleAnalytics
   repository: https://github.com/battlemidget/Mojolicious-Plugin-GoogleAnalytics.git
-version: 0.003
+version: 1.001

@@ -3,7 +3,7 @@ package Mojolicious::Plugin::GoogleAnalytics;
 use strictures 1;
 use Mojo::Base 'Mojolicious::Plugin';
 
-our $VERSION = '0.003'; # VERSION
+our $VERSION = '1.001'; # VERSION
 
 has 'template' => 'analytics_template';
 
@@ -60,7 +60,7 @@ Mojolicious::Plugin::GoogleAnalytics - Mojolicious Plugin
   plugin 'GoogleAnalytics';
 
   # In your layout template
-  <%= analytics 'UA-32432-1' %>
+  <%= analytics_inc 'UA-32432-1' %>
   </head> <!-- Make sure its just before closing head tag -->
 
 

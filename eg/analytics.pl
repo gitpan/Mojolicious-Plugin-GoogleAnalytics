@@ -1,8 +1,6 @@
 #!/usr/bin/env perl
 use Mojolicious::Lite;
 
-# Documentation browser under "/perldoc"
-plugin 'PODRenderer';
 plugin 'GoogleAnalytics';
 
 get '/' => sub {
@@ -23,7 +21,7 @@ Welcome to the Mojolicious real-time web framework!
 <html>
   <head>
   <title><%= title %></title>
-  <%= analytics 'UA-23169268-1' %>
+  <%= analytics_inc 'UA-23169268-1' %>
   </head>
   <body><%= content %>
   </body>
