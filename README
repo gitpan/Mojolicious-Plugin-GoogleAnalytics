@@ -9,7 +9,7 @@ SYNOPSIS
       plugin 'GoogleAnalytics';
 
       # In your layout template
-      <%= analytics_inc 'UA-32432-1' %>
+      <%= analytics_inc 'UA-32432-1', 'example.com', 1 %>
       </head> <!-- Make sure its just before closing head tag -->
 
 DESCRIPTION
@@ -24,6 +24,25 @@ METHODS
       $plugin->register(Mojolicious->new);
 
     Register plugin in Mojolicious application.
+
+OPTIONS
+  Track Subdomains
+    Put the domain which qualifies any subdomains you wish to track, eg.
+    blog.example.com, apps.example.com will have the second arguement set to
+    'example.com'
+
+  Multiple top level domains
+    Default is set to 1 to allow domains such as example.fr, example.cn, and
+    example.com
+
+AUTHOR
+    Adam Stokes <adamjs@cpan.org>
+
+COPYRIGHT
+    Copyright 2013- Adam Stokes
+
+LICENSE
+    Licensed under the same terms as Perl.
 
 SEE ALSO
     Mojolicious, Mojolicious::Guides, <http://mojolicio.us>.

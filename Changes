@@ -1,0 +1,5 @@
+Revision history for Mojolicious-Plugin-GoogleAnalytics
+
+1.003  2013-08-27 00:45:52 EDT
+	- Support sub-domains
+	- Support multiple top level domains

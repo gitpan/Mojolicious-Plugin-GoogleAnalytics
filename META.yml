@@ -1,24 +1,29 @@
 ---
-abstract: 'Mojolicious plugin for integrating Google Analytics'
+abstract: 'Mojolicious Plugin'
 author:
   - 'Adam Stokes <adamjs@cpan.org>'
-build_requires:
-  Mojolicious::Lite: 0
-  Test::Mojo: 0
-  Test::More: 0
+build_requires: {}
 configure_requires:
-  ExtUtils::MakeMaker: 6.30
+  Module::Build::Tiny: 0.025
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Dist::Milla version v1.0.3, Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.120921'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Mojolicious-Plugin-GoogleAnalytics
-requires:
-  Mojo::Base: 0
-  strictures: 1
+no_index:
+  directory:
+    - t
+    - xt
+    - inc
+    - share
+    - eg
+    - examples
 resources:
+  bugtracker: https://github.com/battlemidget/Mojolicious-Plugin-GoogleAnalytics/issues
   homepage: https://github.com/battlemidget/Mojolicious-Plugin-GoogleAnalytics
   repository: https://github.com/battlemidget/Mojolicious-Plugin-GoogleAnalytics.git
-version: 1.002
+version: 1.003
+x_contributors:
+  - 'Adam Stokes <adam.stokes@ubuntu.com>'

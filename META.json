@@ -1,0 +1,55 @@
+{
+   "abstract" : "Mojolicious Plugin",
+   "author" : [
+      "Adam Stokes <adamjs@cpan.org>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Milla version v1.0.3, Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.120921",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Mojolicious-Plugin-GoogleAnalytics",
+   "no_index" : {
+      "directory" : [
+         "t",
+         "xt",
+         "inc",
+         "share",
+         "eg",
+         "examples"
+      ]
+   },
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "Module::Build::Tiny" : "0.025"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "Test::Pod" : "1.41"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/battlemidget/Mojolicious-Plugin-GoogleAnalytics/issues"
+      },
+      "homepage" : "https://github.com/battlemidget/Mojolicious-Plugin-GoogleAnalytics",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/battlemidget/Mojolicious-Plugin-GoogleAnalytics.git",
+         "web" : "https://github.com/battlemidget/Mojolicious-Plugin-GoogleAnalytics"
+      }
+   },
+   "version" : "1.003",
+   "x_contributors" : [
+      "Adam Stokes <adam.stokes@ubuntu.com>"
+   ]
+}
+
