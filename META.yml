@@ -2,11 +2,13 @@
 abstract: 'Mojolicious Plugin'
 author:
   - 'Adam Stokes <adamjs@cpan.org>'
-build_requires: {}
+build_requires:
+  Test::Mojo: 0
+  Test::More: 0.88
 configure_requires:
-  Module::Build::Tiny: 0.025
+  Module::Build::Tiny: 0.026
 dynamic_config: 0
-generated_by: 'Dist::Milla version v1.0.3, Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Dist::Milla version v1.0.4, Dist::Zilla version 4.300037, CPAN::Meta::Converter version 2.120921'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -20,10 +22,13 @@ no_index:
     - share
     - eg
     - examples
+requires:
+  Mojolicious: 0
+  perl: 5.008005
 resources:
   bugtracker: https://github.com/battlemidget/Mojolicious-Plugin-GoogleAnalytics/issues
   homepage: https://github.com/battlemidget/Mojolicious-Plugin-GoogleAnalytics
   repository: https://github.com/battlemidget/Mojolicious-Plugin-GoogleAnalytics.git
-version: 1.003
+version: 1.004
 x_contributors:
   - 'Adam Stokes <adam.stokes@ubuntu.com>'

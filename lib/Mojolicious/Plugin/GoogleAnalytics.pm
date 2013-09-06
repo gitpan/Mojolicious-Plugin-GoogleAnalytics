@@ -2,7 +2,7 @@ package Mojolicious::Plugin::GoogleAnalytics;
 
 use Mojo::Base 'Mojolicious::Plugin';
 
-our $VERSION = '1.003';
+our $VERSION = '1.004';
 
 has 'template' => 'analytics_template';
 
