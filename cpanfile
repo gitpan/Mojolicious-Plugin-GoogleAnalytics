@@ -1,9 +1,18 @@
-requires 'perl', '5.008005';
-requires 'Mojolicious';
+requires "Mojo::Base" => "0";
 
-# requires 'Some::Module', 'VERSION';
+on 'test' => sub {
+  requires "Mojolicious" => "0";
+  requires "Mojolicious::Lite" => "0";
+  requires "Test::Mojo" => "0";
+  requires "Test::More" => "0";
+  requires "Test::NoTabs" => "0";
+};
 
-on test => sub {
-    requires 'Test::More', '0.88';
-    requires 'Test::Mojo';
+on 'configure' => sub {
+  requires "ExtUtils::MakeMaker" => "6.30";
+};
+
+on 'develop' => sub {
+  requires "Test::More" => "0";
+  requires "Test::NoTabs" => "0";
 };
